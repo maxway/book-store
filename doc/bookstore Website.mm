@@ -368,9 +368,5 @@
 </node>
 </node>
 </node>
-<node COLOR="#0033ff" CREATED="1324117672171" ID="ID_718409606" MODIFIED="1324117672171" POSITION="right" TEXT="">
-<edge STYLE="sharp_bezier" WIDTH="8"/>
-<font NAME="SansSerif" SIZE="18"/>
-</node>
 </node>
 </map>
