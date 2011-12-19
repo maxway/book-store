@@ -1,6 +1,0 @@
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-20 01:01:04
-project --topLevelPackage com.max.bookstore --projectName bookstore --java 6
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-20 01:01:06
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-20 01:05:07
-hint
-persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
