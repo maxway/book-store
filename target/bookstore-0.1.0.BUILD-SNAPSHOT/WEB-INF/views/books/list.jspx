@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_max_bookstore_model_Book" items="${books}" z="QX/Ygbxv3Ro5jWbYy7Yfp4O4QOQ=">
+        <table:table data="${books}" id="l_com_max_bookstore_model_Book" path="/books" z="5baAG2B8jwFuGAKDdytp0IO3tlM=">
+            <table:column id="c_com_max_bookstore_model_Book_uuid" property="uuid" z="lOPu7DPJJ4TTm6ZlWUIi9ZiRA7w="/>
+            <table:column id="c_com_max_bookstore_model_Book_name" property="name" z="KFDq1W2STYPMlXvkwi4b1GJIkFY="/>
+            <table:column id="c_com_max_bookstore_model_Book_ISBN" property="ISBN" z="vtNKa8vjU1750zfwDGuiS9iQNHM="/>
+            <table:column id="c_com_max_bookstore_model_Book_category" property="category" z="7zaGgdroJnyusluamfxyrOQQq+4="/>
+            <table:column id="c_com_max_bookstore_model_Book_owner" property="owner" z="1N6TsMLAtak0f/CECTqkxFEUAhI="/>
+            <table:column id="c_com_max_bookstore_model_Book_status" property="status" z="mjBL4bG0a/DQoj5Ayvz6rDX64jQ="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_max_bookstore_model_People" modelAttribute="people" path="/peoples" render="${empty dependencies}" z="bReKxpZVOPA3tevO2WfmoH1yRxI=">
+        <field:input field="email" id="c_com_max_bookstore_model_People_email" required="true" validationMessageCode="field_invalid_email" z="n/SvLOu9V6c9jRT5CRgpyF+kcRM="/>
+        <field:input field="name" id="c_com_max_bookstore_model_People_name" z="KknFbx6mgr0e1YIWAqiGI8SXwJE="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_max_bookstore_model_People" render="${not empty dependencies}" z="T9Yhpq2XLJWeLkq5wY1reBTx07o="/>
+</div>

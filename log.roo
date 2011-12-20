@@ -1,0 +1,113 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-20 23:33:09
+project --topLevelPackage com.max.bookstore --projectName bookstore --java 6
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-20 23:33:20
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-20 23:33:46
+hint
+// [failed] persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+hint
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+hint
+entity --class ~.BookClass
+hint 
+// [failed] entity --class ~.BookClass --testAutomatically 
+hint entity
+help entity
+hint
+entity --class ~.BookClass --testAutomatically
+hint
+field number --fieldName uuid --type int --notNull --unique
+field string --fieldName name --notNull
+field number --type long --fieldName ISBN
+field enum --fieldName category --type com.max.bookstore.BookCategory
+// [failed] enum constant --name BookCategory
+entity --class ~.BookCategory
+enum constant --name Computer
+enum constant --name Art
+entity --class ~.Book --extends com.max.bookstore.BookClass
+// [failed] entity --class ~.User --testAutomatically 
+// [failed] entity --class ~.Book --extends com.max.bookstore.BookClass --testAutomatically 
+entity --class ~.Book --extends com.max.bookstore.BookClass --testAutomatically 
+entity --class ~.People --testAutomatically 
+entity --class com.max.bookstore.model.BorrowCard --testAutomatically 
+field email template --fieldName email --class com.max.bookstore.model.People
+// [failed] field string --fieldName email --unique --notNull 
+field string --fieldName email --unique --notNull 
+field string --fieldName name
+field reference --fieldName book --type com.max.bookstore.model.Book
+field reference --fieldName owner --type com.max.bookstore.model.People --class com.max.bookstore.model.BorrowCard
+field reference --fieldName borrower --type com.max.bookstore.model.People --class com.max.bookstore.model.BorrowCard
+field reference --type com.max.bookstore.model.People --fieldName owner --class com.max.bookstore.model.Book
+// [failed] field reference --type com.max.bookstore.model.People --fieldName owner --class com.max.bookstore.model.Book --notNull
+field reference --type com.max.bookstore.model.People --fieldName owner --class com.max.bookstore.model.Book --notNull
+entity --class com.max.bookstore.model.Status --testAutomatically
+field boolean --fieldName canBorrow --value True
+// [failed] field reference --fieldName borrowCard --type com.max.bookstore.model.BorrowCard
+field reference --fieldName borrowCard --type com.max.bookstore.model.BorrowCard
+field set --fieldName history --type com.max.bookstore.model.BorrowCard --sizeMax 10
+field reference --fieldName status --type com.max.bookstore.model.Status
+hint
+controller all --package com.max.bookstore.controller
+logging setup --level INFO --package ALL_SPRING 
+hint
+// [failed] perform tests
+// [failed] perform tests
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 00:42:49
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 00:48:35
+hint
+perform tests
+perform tests
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 00:50:10
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 00:50:26
+perform tests
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 00:53:57
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 00:57:15
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 01:07:51
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 01:09:52
+perform tests
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 01:11:49
+perform tests
+perform tests 
+perform tests -X
+perform tests
+perform tests
+perform tests
+perform package 
+field reference --class com.max.bookstore.model.BookClass --fieldName category --type ~.model.BookCategory
+perform tests
+hint
+hint
+// [failed] controller class --class com.max.bookstore.model.Book
+controller all --package com.max.bookstore.controller
+// [failed] web mvc controller --class com.max.bookstore.model.Book
+web mvc update tags
+controller all --package com.max.bookstore.controller
+controller all --package com.max.bookstore.controller
+perform tests 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 02:00:41
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 02:00:58
+hint
+hint controllers
+controller all --package com.max.bookstore.controller 
+perform tests 
+controller class --class com.max.bookstore.controller.ApplicationConversionServiceFactoryBean 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 02:13:49
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 02:14:07
+hint
+perform tests
+hint
+web mvc setup
+web mvc all --package com.max.bookstore.web
+web mvc update tags 
+perform package 
+web mvc update tags 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 02:27:18
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 02:56:28
+hint
+web mvc update tag 
+web mvc all --package com.max.bookstore.web
+web mvc all --package com.max.bookstore.web
+// [failed] web mvc controller --class com.max.bookstore.model.Book
+// [failed] web mvc controller --class com.max.bookstore.model.Book
+web mvc all --package com.max.bookstore.web
+perform tests 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 03:09:24

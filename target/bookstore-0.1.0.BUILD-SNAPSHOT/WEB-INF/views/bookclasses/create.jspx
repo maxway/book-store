@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_max_bookstore_model_BookClass" modelAttribute="bookClass" path="/bookclasses" render="${empty dependencies}" z="WCLiBigFI1qV4QgtBfLABPPvcAk=">
+        <field:input field="uuid" id="c_com_max_bookstore_model_BookClass_uuid" required="true" z="n79iP5GhXrk0JXv0Z9pwYHYLpWc="/>
+        <field:input field="name" id="c_com_max_bookstore_model_BookClass_name" required="true" z="T6FsXshgGjHM3FzzkDEEQ9WIV00="/>
+        <field:input field="ISBN" id="c_com_max_bookstore_model_BookClass_ISBN" z="FcDqhz9z0e6a5Dor89mJM/jrPZI="/>
+        <field:select field="category" id="c_com_max_bookstore_model_BookClass_category" itemValue="id" items="${bookcategorys}" path="/bookcategorys" z="wrJfvkQBfscJuaLlwbofwssEJtI="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_max_bookstore_model_BookClass" render="${not empty dependencies}" z="y0G8RAHZ93SpMYphXlJMd+ev4jg="/>
+</div>

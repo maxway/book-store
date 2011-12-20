@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_max_bookstore_model_BorrowCard" items="${borrowcards}" z="04spmbnfOmbNA3Gsl58CQPPsxUE=">
+        <table:table data="${borrowcards}" id="l_com_max_bookstore_model_BorrowCard" path="/borrowcards" z="LUZF488YM5np7fRrqh41NOwcqMA=">
+            <table:column id="c_com_max_bookstore_model_BorrowCard_book" property="book" z="ZldkGxJXMDEy4bu+WVc+wt/iI0U="/>
+            <table:column id="c_com_max_bookstore_model_BorrowCard_owner" property="owner" z="nHuScMkRXOX67XZ+N1qu2NfR0z0="/>
+            <table:column id="c_com_max_bookstore_model_BorrowCard_borrower" property="borrower" z="mA4iuIKz03dmFHDTDf9Dc680XLg="/>
+        </table:table>
+    </page:list>
+</div>

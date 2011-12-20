@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_max_bookstore_model_BorrowCard" object="${borrowcard}" path="/borrowcards" z="UVH6kbzQcuk3O551fhHmtQwgCRM=">
+        <field:display field="book" id="s_com_max_bookstore_model_BorrowCard_book" object="${borrowcard}" z="l/xvxxj07rv7yQfX7WSkO2t+KOo="/>
+        <field:display field="owner" id="s_com_max_bookstore_model_BorrowCard_owner" object="${borrowcard}" z="1B8T71B1aMy63m4sF27p8+ypex4="/>
+        <field:display field="borrower" id="s_com_max_bookstore_model_BorrowCard_borrower" object="${borrowcard}" z="8l0+8IDpOQ1De97Bs/ugA7v9KU8="/>
+    </page:show>
+</div>

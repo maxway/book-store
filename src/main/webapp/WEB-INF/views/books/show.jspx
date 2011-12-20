@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_max_bookstore_model_Book" object="${book}" path="/books" z="KeE4F/xQJHqhUYxxX2HTkPnRBqo=">
+        <field:display field="uuid" id="s_com_max_bookstore_model_Book_uuid" object="${book}" z="dbv7FDdC735DImB1z9/7yoYNWHA="/>
+        <field:display field="name" id="s_com_max_bookstore_model_Book_name" object="${book}" z="hIsKgyo4AODqKa7RODZOfQ7xk9w="/>
+        <field:display field="ISBN" id="s_com_max_bookstore_model_Book_ISBN" object="${book}" z="9JbmiU6iE3R7E5vkz0h3Ix5TLU4="/>
+        <field:display field="category" id="s_com_max_bookstore_model_Book_category" object="${book}" z="T96Mu6iJcv7o1/G/Dxkp/nWZDyI="/>
+        <field:display field="owner" id="s_com_max_bookstore_model_Book_owner" object="${book}" z="l0nMmz9BWYH1zSs1x5O2m0xcjaM="/>
+    </page:show>
+</div>
