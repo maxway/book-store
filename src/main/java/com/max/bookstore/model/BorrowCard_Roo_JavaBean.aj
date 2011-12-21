@@ -5,6 +5,7 @@ package com.max.bookstore.model;
 
 import com.max.bookstore.model.Book;
 import com.max.bookstore.model.People;
+import java.util.Date;
 
 privileged aspect BorrowCard_Roo_JavaBean {
     
@@ -16,20 +17,28 @@ privileged aspect BorrowCard_Roo_JavaBean {
         this.book = book;
     }
     
-    public People BorrowCard.getOwner() {
-        return this.owner;
-    }
-    
-    public void BorrowCard.setOwner(People owner) {
-        this.owner = owner;
-    }
-    
     public People BorrowCard.getBorrower() {
         return this.borrower;
     }
     
     public void BorrowCard.setBorrower(People borrower) {
         this.borrower = borrower;
+    }
+    
+    public Date BorrowCard.getBorrowDate() {
+        return this.borrowDate;
+    }
+    
+    public void BorrowCard.setBorrowDate(Date borrowDate) {
+        this.borrowDate = borrowDate;
+    }
+    
+    public Date BorrowCard.getReturnDate() {
+        return this.returnDate;
+    }
+    
+    public void BorrowCard.setReturnDate(Date returnDate) {
+        this.returnDate = returnDate;
     }
     
 }

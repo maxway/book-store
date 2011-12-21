@@ -10,9 +10,10 @@ privileged aspect BorrowCard_Roo_ToString {
     public String BorrowCard.toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Book: ").append(getBook()).append(", ");
+        sb.append("BorrowDate: ").append(getBorrowDate()).append(", ");
         sb.append("Borrower: ").append(getBorrower()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
-        sb.append("Owner: ").append(getOwner()).append(", ");
+        sb.append("ReturnDate: ").append(getReturnDate()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

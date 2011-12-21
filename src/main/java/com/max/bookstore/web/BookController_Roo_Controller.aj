@@ -5,6 +5,7 @@ package com.max.bookstore.web;
 
 import com.max.bookstore.model.Book;
 import com.max.bookstore.model.BookCategory;
+import com.max.bookstore.model.BorrowCard;
 import com.max.bookstore.model.People;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
@@ -96,6 +97,11 @@ privileged aspect BookController_Roo_Controller {
     @ModelAttribute("bookcategorys")
     public Collection<BookCategory> BookController.populateBookCategorys() {
         return BookCategory.findAllBookCategorys();
+    }
+    
+    @ModelAttribute("borrowcards")
+    public Collection<BorrowCard> BookController.populateBorrowCards() {
+        return BorrowCard.findAllBorrowCards();
     }
     
     @ModelAttribute("peoples")

@@ -121,3 +121,8 @@ perform tests
 hint
 perform tests 
 perform tests 
+field reference --class ~.model.Book --fieldName borrowCard --type ~model.BorrowCard
+field date --class ~model.BorrowCard --fieldName borrowDate --type java.util.Date --notNull
+field date --type java.util.Date --fieldName returnDate --comment "Also means this card will move to history"
+perform tests
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-22 04:35:48

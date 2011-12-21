@@ -13,6 +13,8 @@ import java.lang.String;
 import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import org.joda.time.format.DateTimeFormat;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -29,6 +31,7 @@ privileged aspect BorrowCardController_Roo_Controller {
     public String BorrowCardController.create(@Valid BorrowCard borrowCard, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("borrowCard", borrowCard);
+            addDateTimeFormatPatterns(uiModel);
             return "borrowcards/create";
         }
         uiModel.asMap().clear();
@@ -39,11 +42,13 @@ privileged aspect BorrowCardController_Roo_Controller {
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String BorrowCardController.createForm(Model uiModel) {
         uiModel.addAttribute("borrowCard", new BorrowCard());
+        addDateTimeFormatPatterns(uiModel);
         return "borrowcards/create";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String BorrowCardController.show(@PathVariable("id") Long id, Model uiModel) {
+        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("borrowcard", BorrowCard.findBorrowCard(id));
         uiModel.addAttribute("itemId", id);
         return "borrowcards/show";
@@ -59,6 +64,7 @@ privileged aspect BorrowCardController_Roo_Controller {
         } else {
             uiModel.addAttribute("borrowcards", BorrowCard.findAllBorrowCards());
         }
+        addDateTimeFormatPatterns(uiModel);
         return "borrowcards/list";
     }
     
@@ -66,6 +72,7 @@ privileged aspect BorrowCardController_Roo_Controller {
     public String BorrowCardController.update(@Valid BorrowCard borrowCard, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("borrowCard", borrowCard);
+            addDateTimeFormatPatterns(uiModel);
             return "borrowcards/update";
         }
         uiModel.asMap().clear();
@@ -76,6 +83,7 @@ privileged aspect BorrowCardController_Roo_Controller {
     @RequestMapping(value = "/{id}", params = "form", method = RequestMethod.GET)
     public String BorrowCardController.updateForm(@PathVariable("id") Long id, Model uiModel) {
         uiModel.addAttribute("borrowCard", BorrowCard.findBorrowCard(id));
+        addDateTimeFormatPatterns(uiModel);
         return "borrowcards/update";
     }
     
@@ -101,6 +109,11 @@ privileged aspect BorrowCardController_Roo_Controller {
     @ModelAttribute("peoples")
     public Collection<People> BorrowCardController.populatePeoples() {
         return People.findAllPeoples();
+    }
+    
+    void BorrowCardController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("borrowCard_borrowdate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("borrowCard_returndate_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
     String BorrowCardController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

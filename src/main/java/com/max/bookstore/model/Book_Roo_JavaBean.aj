@@ -3,6 +3,7 @@
 
 package com.max.bookstore.model;
 
+import com.max.bookstore.model.BorrowCard;
 import com.max.bookstore.model.People;
 
 privileged aspect Book_Roo_JavaBean {
@@ -13,6 +14,14 @@ privileged aspect Book_Roo_JavaBean {
     
     public void Book.setOwner(People owner) {
         this.owner = owner;
+    }
+    
+    public BorrowCard Book.getBorrowCard() {
+        return this.borrowCard;
+    }
+    
+    public void Book.setBorrowCard(BorrowCard borrowCard) {
+        this.borrowCard = borrowCard;
     }
     
 }

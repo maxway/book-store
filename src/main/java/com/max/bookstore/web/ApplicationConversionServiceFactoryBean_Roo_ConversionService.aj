@@ -5,6 +5,7 @@ package com.max.bookstore.web;
 
 import com.max.bookstore.model.Book;
 import com.max.bookstore.model.BookClass;
+import com.max.bookstore.model.BorrowCard;
 import com.max.bookstore.model.People;
 import java.lang.String;
 import org.springframework.core.convert.converter.Converter;
@@ -15,6 +16,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(new BookConverter());
         registry.addConverter(new BookClassConverter());
+        registry.addConverter(new BorrowCardConverter());
         registry.addConverter(new PeopleConverter());
     }
     
@@ -33,6 +35,13 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     static class com.max.bookstore.web.ApplicationConversionServiceFactoryBean.BookClassConverter implements Converter<BookClass, String> {
         public String convert(BookClass bookClass) {
             return new StringBuilder().append(bookClass.getUuid()).append(" ").append(bookClass.getName()).append(" ").append(bookClass.getISBN()).toString();
+        }
+        
+    }
+    
+    static class com.max.bookstore.web.ApplicationConversionServiceFactoryBean.BorrowCardConverter implements Converter<BorrowCard, String> {
+        public String convert(BorrowCard borrowCard) {
+            return new StringBuilder().append(borrowCard.getBorrowDate()).append(" ").append(borrowCard.getReturnDate()).toString();
         }
         
     }

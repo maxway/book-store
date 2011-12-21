@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.219" errors="0" skipped="0" tests="9" name="com.max.bookstore.model.PeopleIntegrationTest">
+<testsuite failures="0" time="0.203" errors="0" skipped="0" tests="9" name="com.max.bookstore.model.PeopleIntegrationTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\develop\jdk1.7.0_02\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="D:\git\bookstore"/>
     <property name="java.endorsed.dirs" value="D:\develop\jdk1.7.0_02\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="D:\git\bookstore\target\surefire\surefirebooter500176196084621061.jar"/>
+    <property name="surefire.real.class.path" value="D:\git\bookstore\target\surefire\surefirebooter3102763483425494730.jar"/>
     <property name="java.io.tmpdir" value="C:\DOCUME~1\maxway\LOCALS~1\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="32"/>
     <property name="java.home" value="D:\develop\jdk1.7.0_02\jre"/>
-    <property name="sun.java.command" value="D:\git\bookstore\target\surefire\surefirebooter500176196084621061.jar D:\git\bookstore\target\surefire\surefire7192548533776688814tmp D:\git\bookstore\target\surefire\surefire1895168433898421403tmp"/>
+    <property name="sun.java.command" value="D:\git\bookstore\target\surefire\surefirebooter3102763483425494730.jar D:\git\bookstore\target\surefire\surefire851574294813443053tmp D:\git\bookstore\target\surefire\surefire1354605252556536430tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,12 +62,12 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase time="0.031" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testRemove"/>
-  <testcase time="0.031" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testPersist"/>
-  <testcase time="0.016" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testMerge"/>
-  <testcase time="0.016" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testMarkerMethod"/>
-  <testcase time="0.046" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testFlush"/>
-  <testcase time="0.032" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testCountPeoples"/>
-  <testcase time="0.015" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testFindPeople"/>
+  <testcase time="0.016" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testPersist"/>
+  <testcase time="0.031" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testMerge"/>
+  <testcase time="0" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testMarkerMethod"/>
+  <testcase time="0.016" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testFlush"/>
+  <testcase time="0.015" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testCountPeoples"/>
+  <testcase time="0.016" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testFindPeople"/>
   <testcase time="0.016" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testFindAllPeoples"/>
-  <testcase time="0.016" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testFindPeopleEntries"/>
+  <testcase time="0.062" classname="com.max.bookstore.model.PeopleIntegrationTest" name="testFindPeopleEntries"/>
 </testsuite>
