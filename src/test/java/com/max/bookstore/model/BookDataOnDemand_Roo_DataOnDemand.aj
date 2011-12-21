@@ -7,8 +7,6 @@ import com.max.bookstore.model.Book;
 import com.max.bookstore.model.BookCategory;
 import com.max.bookstore.model.People;
 import com.max.bookstore.model.PeopleDataOnDemand;
-import com.max.bookstore.model.Status;
-import com.max.bookstore.model.StatusDataOnDemand;
 import java.lang.String;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -31,16 +29,12 @@ privileged aspect BookDataOnDemand_Roo_DataOnDemand {
     @Autowired
     private PeopleDataOnDemand BookDataOnDemand.peopleDataOnDemand;
     
-    @Autowired
-    private StatusDataOnDemand BookDataOnDemand.statusDataOnDemand;
-    
     public Book BookDataOnDemand.getNewTransientBook(int index) {
         Book obj = new Book();
         setCategory(obj, index);
         setISBN(obj, index);
         setName(obj, index);
         setOwner(obj, index);
-        setStatus(obj, index);
         setUuid(obj, index);
         return obj;
     }
@@ -63,11 +57,6 @@ privileged aspect BookDataOnDemand_Roo_DataOnDemand {
     public void BookDataOnDemand.setOwner(Book obj, int index) {
         People owner = peopleDataOnDemand.getRandomPeople();
         obj.setOwner(owner);
-    }
-    
-    public void BookDataOnDemand.setStatus(Book obj, int index) {
-        Status status = statusDataOnDemand.getRandomStatus();
-        obj.setStatus(status);
     }
     
     public void BookDataOnDemand.setUuid(Book obj, int index) {

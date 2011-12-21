@@ -10,9 +10,7 @@ import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
 import java.lang.Long;
 import java.lang.String;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.springframework.ui.Model;
@@ -41,11 +39,6 @@ privileged aspect BookController_Roo_Controller {
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String BookController.createForm(Model uiModel) {
         uiModel.addAttribute("book", new Book());
-        List dependencies = new ArrayList();
-        if (People.countPeoples() == 0) {
-            dependencies.add(new String[]{"people", "peoples"});
-        }
-        uiModel.addAttribute("dependencies", dependencies);
         return "books/create";
     }
     
