@@ -116,3 +116,8 @@ hint
 perform tests 
 perform package 
 perform tests 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-22 04:08:42
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-22 04:09:03
+hint
+perform tests 
+perform tests 

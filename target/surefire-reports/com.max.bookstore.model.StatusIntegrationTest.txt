@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.max.bookstore.model.StatusIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.093 sec <<< FAILURE!
-testRemove(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0.016 sec  <<< ERROR!
+Tests run: 9, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.078 sec <<< FAILURE!
+testRemove(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0.031 sec  <<< ERROR!
 java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: <clinit> signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)
@@ -155,7 +155,7 @@ java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, meth
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 
-testFlush(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0.015 sec  <<< ERROR!
+testFlush(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: <clinit> signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)
@@ -257,7 +257,7 @@ java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, meth
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 
-testFindStatus(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
+testFindStatus(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0.016 sec  <<< ERROR!
 java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: <clinit> signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)
@@ -308,7 +308,7 @@ java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, meth
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 
-testFindAllStatuses(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0.016 sec  <<< ERROR!
+testFindAllStatuses(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: <clinit> signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)
@@ -359,7 +359,7 @@ java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, meth
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 
-testFindStatusEntries(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0 sec  <<< ERROR!
+testFindStatusEntries(com.max.bookstore.model.StatusIntegrationTest)  Time elapsed: 0.016 sec  <<< ERROR!
 java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: <clinit> signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)

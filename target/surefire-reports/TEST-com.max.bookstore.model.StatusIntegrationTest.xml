@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.093" errors="8" skipped="0" tests="9" name="com.max.bookstore.model.StatusIntegrationTest">
+<testsuite failures="0" time="0.078" errors="8" skipped="0" tests="9" name="com.max.bookstore.model.StatusIntegrationTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\develop\jdk1.7.0_02\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="D:\git\bookstore"/>
     <property name="java.endorsed.dirs" value="D:\develop\jdk1.7.0_02\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="D:\git\bookstore\target\surefire\surefirebooter7841720979332591980.jar"/>
+    <property name="surefire.real.class.path" value="D:\git\bookstore\target\surefire\surefirebooter8802859151669076829.jar"/>
     <property name="java.io.tmpdir" value="C:\DOCUME~1\maxway\LOCALS~1\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="32"/>
     <property name="java.home" value="D:\develop\jdk1.7.0_02\jre"/>
-    <property name="sun.java.command" value="D:\git\bookstore\target\surefire\surefirebooter7841720979332591980.jar D:\git\bookstore\target\surefire\surefire8980007904161131883tmp D:\git\bookstore\target\surefire\surefire2831765128006382086tmp"/>
+    <property name="sun.java.command" value="D:\git\bookstore\target\surefire\surefirebooter8802859151669076829.jar D:\git\bookstore\target\surefire\surefire9185220532025480061tmp D:\git\bookstore\target\surefire\surefire4945914185592379266tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.032" classname="com.max.bookstore.model.StatusIntegrationTest" name="testRemove">
+  <testcase time="0.031" classname="com.max.bookstore.model.StatusIntegrationTest" name="testRemove">
     <error message="(class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large" type="java.lang.VerifyError">java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)
@@ -112,11 +112,11 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 </error>
-    <system-out>@SLTests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 sec
+    <system-out>@SLTests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.234 sec
 @SLRunning com.max.bookstore.model.StatusIntegrationTest
-2011-12-22 04:05:08,453 [main] INFO  org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class com.max.bookstore.model.StatusIntegrationTest]: using defaults.
-2011-12-22 04:05:08,468 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (1): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
-2011-12-22 04:05:08,484 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@1286868, testMethod = testRemove@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
+2011-12-22 04:12:28,375 [main] INFO  org.springframework.test.context.TestContextManager - @TestExecutionListeners is not present for class [class com.max.bookstore.model.StatusIntegrationTest]: using defaults.
+2011-12-22 04:12:28,390 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (1): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
+2011-12-22 04:12:28,390 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@1286868, testMethod = testRemove@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
 </system-out>
   </testcase>
   <testcase time="0" classname="com.max.bookstore.model.StatusIntegrationTest" name="testPersist">
@@ -170,8 +170,8 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 </error>
-    <system-out>2011-12-22 04:05:08,500 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (2): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
-2011-12-22 04:05:08,500 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@85a5a5, testMethod = testPersist@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
+    <system-out>2011-12-22 04:12:28,406 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (2): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
+2011-12-22 04:12:28,406 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@85a5a5, testMethod = testPersist@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
 </system-out>
   </testcase>
   <testcase time="0" classname="com.max.bookstore.model.StatusIntegrationTest" name="testMerge">
@@ -225,12 +225,11 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 </error>
-    <system-out>2011-12-22 04:05:08,500 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (3): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
-2011-12-22 04:05:08,500 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@194ae28, testMethod = testMerge@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
+    <system-out>2011-12-22 04:12:28,406 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (3): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
+2011-12-22 04:12:28,406 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@194ae28, testMethod = testMerge@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
 </system-out>
   </testcase>
-  <testcase time="0" classname="com.max.bookstore.model.StatusIntegrationTest" name="testMarkerMethod"/>
-  <testcase time="0.015" classname="com.max.bookstore.model.StatusIntegrationTest" name="testFlush">
+  <testcase time="0" classname="com.max.bookstore.model.StatusIntegrationTest" name="testFlush">
     <error message="(class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large" type="java.lang.VerifyError">java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)
@@ -281,10 +280,11 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 </error>
-    <system-out>2011-12-22 04:05:08,500 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (5): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
-2011-12-22 04:05:08,515 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@1609aa5, testMethod = testFlush@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
+    <system-out>2011-12-22 04:12:28,421 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (4): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
+2011-12-22 04:12:28,421 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@1d2845a, testMethod = testFlush@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
 </system-out>
   </testcase>
+  <testcase time="0" classname="com.max.bookstore.model.StatusIntegrationTest" name="testMarkerMethod"/>
   <testcase time="0" classname="com.max.bookstore.model.StatusIntegrationTest" name="testCountStatuses">
     <error message="(class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large" type="java.lang.VerifyError">java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
@@ -336,11 +336,11 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 </error>
-    <system-out>2011-12-22 04:05:08,515 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (6): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
-2011-12-22 04:05:08,515 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@931a92, testMethod = testCountStatuses@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
+    <system-out>2011-12-22 04:12:28,421 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (6): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
+2011-12-22 04:12:28,421 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@931a92, testMethod = testCountStatuses@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
 </system-out>
   </testcase>
-  <testcase time="0" classname="com.max.bookstore.model.StatusIntegrationTest" name="testFindStatus">
+  <testcase time="0.016" classname="com.max.bookstore.model.StatusIntegrationTest" name="testFindStatus">
     <error message="(class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large" type="java.lang.VerifyError">java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)
@@ -391,11 +391,11 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 </error>
-    <system-out>2011-12-22 04:05:08,515 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (7): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
-2011-12-22 04:05:08,515 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@1284be4, testMethod = testFindStatus@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
+    <system-out>2011-12-22 04:12:28,421 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (7): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
+2011-12-22 04:12:28,437 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@1284be4, testMethod = testFindStatus@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
 </system-out>
   </testcase>
-  <testcase time="0.016" classname="com.max.bookstore.model.StatusIntegrationTest" name="testFindAllStatuses">
+  <testcase time="0" classname="com.max.bookstore.model.StatusIntegrationTest" name="testFindAllStatuses">
     <error message="(class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large" type="java.lang.VerifyError">java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)
@@ -446,11 +446,11 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 </error>
-    <system-out>2011-12-22 04:05:08,531 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (8): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
-2011-12-22 04:05:08,531 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@545868, testMethod = testFindAllStatuses@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
+    <system-out>2011-12-22 04:12:28,437 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (8): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
+2011-12-22 04:12:28,437 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@545868, testMethod = testFindAllStatuses@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
 </system-out>
   </testcase>
-  <testcase time="0.015" classname="com.max.bookstore.model.StatusIntegrationTest" name="testFindStatusEntries">
+  <testcase time="0.016" classname="com.max.bookstore.model.StatusIntegrationTest" name="testFindStatusEntries">
     <error message="(class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large" type="java.lang.VerifyError">java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large
 	at com.max.bookstore.model.StatusDataOnDemand_Roo_DataOnDemand.ajc$interMethod$com_max_bookstore_model_StatusDataOnDemand_Roo_DataOnDemand$com_max_bookstore_model_StatusDataOnDemand$setBorrowCard(StatusDataOnDemand_Roo_DataOnDemand.aj:35)
 	at com.max.bookstore.model.StatusDataOnDemand.setBorrowCard(StatusDataOnDemand.java:1)
@@ -501,8 +501,8 @@
 	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
 </error>
-    <system-out>2011-12-22 04:05:08,531 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (9): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
-2011-12-22 04:05:08,531 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@9a6b5a, testMethod = testFindStatusEntries@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
+    <system-out>2011-12-22 04:12:28,437 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Began transaction (9): transaction manager [org.springframework.orm.jpa.JpaTransactionManager@826bd1]; rollback [true]
+2011-12-22 04:12:28,437 [main] INFO  org.springframework.test.context.transaction.TransactionalTestExecutionListener - Rolled back transaction after test execution for test context [[TestContext@16fd57a testClass = StatusIntegrationTest, locations = array&lt;String&gt;[&apos;classpath:/META-INF/spring/applicationContext.xml&apos;], testInstance = com.max.bookstore.model.StatusIntegrationTest@9a6b5a, testMethod = testFindStatusEntries@StatusIntegrationTest, testException = java.lang.VerifyError: (class: com/max/bookstore/model/Status_Roo_JavaBean, method: &lt;clinit&gt; signature: ()V) Stack size too large]]
 </system-out>
   </testcase>
 </testsuite>
