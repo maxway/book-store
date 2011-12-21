@@ -7,8 +7,7 @@
         <field:input field="name" id="c_com_max_bookstore_model_Book_name" required="true" z="4yb+qjzRw09Mx44QlkJ0Y30eesI="/>
         <field:input field="ISBN" id="c_com_max_bookstore_model_Book_ISBN" z="lGOTd9i4TQM+izKDKKjlsGSOakU="/>
         <field:select field="category" id="c_com_max_bookstore_model_Book_category" itemValue="id" items="${bookcategorys}" path="/bookcategorys" z="sA1RrmV4gByODNVTq6zX/Qg5lYs="/>
-        <field:select field="owner" id="c_com_max_bookstore_model_Book_owner" itemValue="id" items="${peoples}" path="/peoples" required="true" z="082OLsY5EEzG0kTVHcZnmE2oR30="/>
-        <field:select field="status" id="c_com_max_bookstore_model_Book_status" itemValue="id" items="${statuses}" path="/statuses" z="N01cwhRha94NCtHmKNP9g5s+n/4="/>
+        <field:select field="owner" id="c_com_max_bookstore_model_Book_owner" itemValue="id" items="${peoples}" path="/peoples" z="SICPIAjUOQ5a/Fs3x9ynqPRCYis="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_max_bookstore_model_Book" render="${not empty dependencies}" z="mwPwALej5PYzAjenFwkojpzikuQ="/>
 </div>

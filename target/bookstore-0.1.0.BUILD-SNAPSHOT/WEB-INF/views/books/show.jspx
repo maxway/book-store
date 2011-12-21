@@ -8,6 +8,5 @@
         <field:display field="ISBN" id="s_com_max_bookstore_model_Book_ISBN" object="${book}" z="9JbmiU6iE3R7E5vkz0h3Ix5TLU4="/>
         <field:display field="category" id="s_com_max_bookstore_model_Book_category" object="${book}" z="T96Mu6iJcv7o1/G/Dxkp/nWZDyI="/>
         <field:display field="owner" id="s_com_max_bookstore_model_Book_owner" object="${book}" z="l0nMmz9BWYH1zSs1x5O2m0xcjaM="/>
-        <field:display field="status" id="s_com_max_bookstore_model_Book_status" object="${book}" z="wZ9mCHb/OFo1khVljZ3Mp42gjJM="/>
     </page:show>
 </div>

@@ -9,7 +9,6 @@
             <table:column id="c_com_max_bookstore_model_Book_ISBN" property="ISBN" z="vtNKa8vjU1750zfwDGuiS9iQNHM="/>
             <table:column id="c_com_max_bookstore_model_Book_category" property="category" z="7zaGgdroJnyusluamfxyrOQQq+4="/>
             <table:column id="c_com_max_bookstore_model_Book_owner" property="owner" z="1N6TsMLAtak0f/CECTqkxFEUAhI="/>
-            <table:column id="c_com_max_bookstore_model_Book_status" property="status" z="mjBL4bG0a/DQoj5Ayvz6rDX64jQ="/>
         </table:table>
     </page:list>
 </div>
