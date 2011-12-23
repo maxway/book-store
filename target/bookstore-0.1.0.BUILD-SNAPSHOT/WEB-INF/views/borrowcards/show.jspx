@@ -4,7 +4,8 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_max_bookstore_model_BorrowCard" object="${borrowcard}" path="/borrowcards" z="UVH6kbzQcuk3O551fhHmtQwgCRM=">
         <field:display field="book" id="s_com_max_bookstore_model_BorrowCard_book" object="${borrowcard}" z="l/xvxxj07rv7yQfX7WSkO2t+KOo="/>
-        <field:display field="owner" id="s_com_max_bookstore_model_BorrowCard_owner" object="${borrowcard}" z="1B8T71B1aMy63m4sF27p8+ypex4="/>
         <field:display field="borrower" id="s_com_max_bookstore_model_BorrowCard_borrower" object="${borrowcard}" z="8l0+8IDpOQ1De97Bs/ugA7v9KU8="/>
+        <field:display date="true" dateTimePattern="${borrowCard_borrowdate_date_format}" field="borrowDate" id="s_com_max_bookstore_model_BorrowCard_borrowDate" object="${borrowcard}" z="abHuFnF1cRIC4WWArZCQQoZ2UHE="/>
+        <field:display date="true" dateTimePattern="${borrowCard_returndate_date_format}" field="returnDate" id="s_com_max_bookstore_model_BorrowCard_returnDate" object="${borrowcard}" z="2OKzkdOruQLbTQD+JjQW8cgs7yQ="/>
     </page:show>
 </div>

@@ -25,6 +25,7 @@
 <aspect name="com.max.bookstore.model.BorrowCard_Roo_JavaBean"/>
 <aspect name="com.max.bookstore.model.BookClass_Roo_Configurable"/>
 <aspect name="com.max.bookstore.web.PeopleController_Roo_Controller"/>
+<aspect name="com.max.bookstore.model.BookCategory_Roo_JavaBean"/>
 </aspects>
 </aspectj>
 

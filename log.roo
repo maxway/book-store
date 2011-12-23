@@ -126,3 +126,18 @@ field date --class ~model.BorrowCard --fieldName borrowDate --type java.util.Dat
 field date --type java.util.Date --fieldName returnDate --comment "Also means this card will move to history"
 perform tests
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-22 04:35:48
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-22 23:09:16
+hint
+selenium test --controller ~web.BookController
+// [failed] perform package 
+perform package 
+selenium test --controller ~web.PeopleController
+hint
+hint eclipse
+hint
+field string --fieldName category --notNull --class ~.model.BookCategory --unique
+hint
+perform tests 
+perform package 
+field boolean --fieldName isReturn --class ~.model.BorrowCard
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-23 04:44:18

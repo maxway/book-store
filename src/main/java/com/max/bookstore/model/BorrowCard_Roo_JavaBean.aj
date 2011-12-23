@@ -5,6 +5,7 @@ package com.max.bookstore.model;
 
 import com.max.bookstore.model.Book;
 import com.max.bookstore.model.People;
+import java.lang.Boolean;
 import java.util.Date;
 
 privileged aspect BorrowCard_Roo_JavaBean {
@@ -39,6 +40,14 @@ privileged aspect BorrowCard_Roo_JavaBean {
     
     public void BorrowCard.setReturnDate(Date returnDate) {
         this.returnDate = returnDate;
+    }
+    
+    public Boolean BorrowCard.getIsReturn() {
+        return this.isReturn;
+    }
+    
+    public void BorrowCard.setIsReturn(Boolean isReturn) {
+        this.isReturn = isReturn;
     }
     
 }

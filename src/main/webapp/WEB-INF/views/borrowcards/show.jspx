@@ -7,5 +7,6 @@
         <field:display field="borrower" id="s_com_max_bookstore_model_BorrowCard_borrower" object="${borrowcard}" z="8l0+8IDpOQ1De97Bs/ugA7v9KU8="/>
         <field:display date="true" dateTimePattern="${borrowCard_borrowdate_date_format}" field="borrowDate" id="s_com_max_bookstore_model_BorrowCard_borrowDate" object="${borrowcard}" z="abHuFnF1cRIC4WWArZCQQoZ2UHE="/>
         <field:display date="true" dateTimePattern="${borrowCard_returndate_date_format}" field="returnDate" id="s_com_max_bookstore_model_BorrowCard_returnDate" object="${borrowcard}" z="2OKzkdOruQLbTQD+JjQW8cgs7yQ="/>
+        <field:display field="isReturn" id="s_com_max_bookstore_model_BorrowCard_isReturn" object="${borrowcard}" z="uIdjSkemLfQehHoYIgiEI89RmFI="/>
     </page:show>
 </div>

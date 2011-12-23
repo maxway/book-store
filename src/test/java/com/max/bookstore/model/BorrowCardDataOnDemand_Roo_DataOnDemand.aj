@@ -8,6 +8,7 @@ import com.max.bookstore.model.BookDataOnDemand;
 import com.max.bookstore.model.BorrowCard;
 import com.max.bookstore.model.People;
 import com.max.bookstore.model.PeopleDataOnDemand;
+import java.lang.Boolean;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -40,6 +41,7 @@ privileged aspect BorrowCardDataOnDemand_Roo_DataOnDemand {
         setBook(obj, index);
         setBorrowDate(obj, index);
         setBorrower(obj, index);
+        setIsReturn(obj, index);
         setReturnDate(obj, index);
         return obj;
     }
@@ -57,6 +59,11 @@ privileged aspect BorrowCardDataOnDemand_Roo_DataOnDemand {
     public void BorrowCardDataOnDemand.setBorrower(BorrowCard obj, int index) {
         People borrower = peopleDataOnDemand.getRandomPeople();
         obj.setBorrower(borrower);
+    }
+    
+    public void BorrowCardDataOnDemand.setIsReturn(BorrowCard obj, int index) {
+        Boolean isReturn = Boolean.TRUE;
+        obj.setIsReturn(isReturn);
     }
     
     public void BorrowCardDataOnDemand.setReturnDate(BorrowCard obj, int index) {

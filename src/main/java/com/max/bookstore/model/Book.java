@@ -13,7 +13,4 @@ public class Book extends BookClass {
 
     @ManyToOne
     private People owner;
-
-    @ManyToOne
-    private BorrowCard borrowCard;
 }

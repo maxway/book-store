@@ -9,6 +9,7 @@ privileged aspect BookCategory_Roo_ToString {
     
     public String BookCategory.toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append("Category: ").append(getCategory()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();

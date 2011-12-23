@@ -7,6 +7,7 @@
         <field:select field="borrower" id="c_com_max_bookstore_model_BorrowCard_borrower" itemValue="id" items="${peoples}" path="/peoples" z="1MTZfqjmVD85/S7/elCaDEWHU/Q="/>
         <field:datetime dateTimePattern="${borrowCard_borrowdate_date_format}" field="borrowDate" id="c_com_max_bookstore_model_BorrowCard_borrowDate" required="true" z="Hmo5UrSS5eBXiGi5F4lqA+M0bOI="/>
         <field:datetime dateTimePattern="${borrowCard_returndate_date_format}" field="returnDate" id="c_com_max_bookstore_model_BorrowCard_returnDate" z="PDjJlJSjmMAuwPoF6IpvftAEbNA="/>
+        <field:checkbox field="isReturn" id="c_com_max_bookstore_model_BorrowCard_isReturn" z="ooUx47LaAU/zLdJxPe1gRCe86JU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_max_bookstore_model_BorrowCard" render="${not empty dependencies}" z="xxjxYq6h3Q5+meItPkWaO3z+8sk="/>
 </div>

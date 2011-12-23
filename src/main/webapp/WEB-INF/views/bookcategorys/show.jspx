@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_max_bookstore_model_BookCategory" object="${bookcategory}" path="/bookcategorys" z="1mCq8DH+qh6YKgo0NWNn5E9hulE=">
+        <field:display field="category" id="s_com_max_bookstore_model_BookCategory_category" object="${bookcategory}" z="hkT65aux7sZa37757ss4ncYZLUI="/>
+    </page:show>
+</div>

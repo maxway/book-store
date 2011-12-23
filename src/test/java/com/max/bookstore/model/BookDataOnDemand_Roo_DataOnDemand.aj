@@ -5,7 +5,6 @@ package com.max.bookstore.model;
 
 import com.max.bookstore.model.Book;
 import com.max.bookstore.model.BookCategory;
-import com.max.bookstore.model.BorrowCard;
 import com.max.bookstore.model.People;
 import com.max.bookstore.model.PeopleDataOnDemand;
 import java.lang.String;
@@ -32,18 +31,12 @@ privileged aspect BookDataOnDemand_Roo_DataOnDemand {
     
     public Book BookDataOnDemand.getNewTransientBook(int index) {
         Book obj = new Book();
-        setBorrowCard(obj, index);
         setCategory(obj, index);
         setISBN(obj, index);
         setName(obj, index);
         setOwner(obj, index);
         setUuid(obj, index);
         return obj;
-    }
-    
-    public void BookDataOnDemand.setBorrowCard(Book obj, int index) {
-        BorrowCard borrowCard = null;
-        obj.setBorrowCard(borrowCard);
     }
     
     public void BookDataOnDemand.setCategory(Book obj, int index) {

@@ -30,4 +30,6 @@ public class BorrowCard {
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
     private Date returnDate;
+
+    private Boolean isReturn;
 }

@@ -10,8 +10,8 @@
 <aspect name="com.max.bookstore.model.BookClass_Roo_Entity"/>
 <aspect name="com.max.bookstore.model.People_Roo_JavaBean"/>
 <aspect name="com.max.bookstore.web.BookCategoryController_Roo_Controller"/>
-<aspect name="com.max.bookstore.model.BookCategory_Roo_Configurable"/>
 <aspect name="com.max.bookstore.model.BookCategory_Roo_ToString"/>
+<aspect name="com.max.bookstore.model.BookCategory_Roo_Configurable"/>
 <aspect name="com.max.bookstore.model.BorrowCard_Roo_Entity"/>
 <aspect name="com.max.bookstore.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
 <aspect name="com.max.bookstore.model.People_Roo_ToString"/>
@@ -25,6 +25,7 @@
 <aspect name="com.max.bookstore.model.BorrowCard_Roo_JavaBean"/>
 <aspect name="com.max.bookstore.model.BookClass_Roo_Configurable"/>
 <aspect name="com.max.bookstore.web.PeopleController_Roo_Controller"/>
+<aspect name="com.max.bookstore.model.BookCategory_Roo_JavaBean"/>
 </aspects>
 </aspectj>
 

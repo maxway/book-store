@@ -12,10 +12,11 @@ C:\Documents and Settings\maxway\.m2\repository\org\springframework\spring-aspec
 -d
 D:\git\bookstore\target\classes
 D:\git\bookstore\src\main\java\com\max\bookstore\model\BookClass_Roo_ToString.aj
+D:\git\bookstore\src\main\java\com\max\bookstore\model\BookCategory_Roo_JavaBean.aj
 D:\git\bookstore\src\main\java\com\max\bookstore\model\People_Roo_ToString.aj
 D:\git\bookstore\src\main\java\com\max\bookstore\model\Book_Roo_ToString.aj
-D:\git\bookstore\src\main\java\com\max\bookstore\model\BookClass_Roo_JavaBean.aj
 D:\git\bookstore\src\main\java\com\max\bookstore\web\ApplicationConversionServiceFactoryBean.java
+D:\git\bookstore\src\main\java\com\max\bookstore\model\BookClass_Roo_JavaBean.aj
 D:\git\bookstore\src\main\java\com\max\bookstore\web\BorrowCardController_Roo_Controller.aj
 D:\git\bookstore\src\main\java\com\max\bookstore\model\BookClass_Roo_Entity.aj
 D:\git\bookstore\src\main\java\com\max\bookstore\model\Book_Roo_Entity.aj

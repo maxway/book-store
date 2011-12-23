@@ -15,13 +15,16 @@
             <menu:item id="i_borrowcard_new" messageCode="global_menu_new" url="/borrowcards?form" z="1mtpsjM+XjAqTrsOIBzN5oRPn/U="/>
             <menu:item id="i_borrowcard_list" messageCode="global_menu_list" url="/borrowcards?page=1&amp;size=${empty param.size ? 10 : param.size}" z="qSOOX9rLCu9R7Mc+3YTV+Tzf9qQ="/>
         </menu:category>
-        <menu:category id="c_status" z="XzEnvQ4n4916mWFCszpAxymOJls=">
-            <menu:item id="i_status_new" messageCode="global_menu_new" url="/statuses?form" z="6KKSWSWkKNkfIXGi3tBFfU6it68="/>
-            <menu:item id="i_status_list" messageCode="global_menu_list" url="/statuses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="qv84Ee4UJYpTszeuYd3LIUKv4cg="/>
-        </menu:category>
         <menu:category id="c_bookclass" z="+MCJBUZcdTjVCB22y7MgQuI2uHU=">
             <menu:item id="i_bookclass_new" messageCode="global_menu_new" url="/bookclasses?form" z="b6ujpic8KtWlSUq2iH2xalbud60="/>
             <menu:item id="i_bookclass_list" messageCode="global_menu_list" url="/bookclasses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="gKMbEi+Bc5CoEiba9EgxUP1i9ls="/>
+        </menu:category>
+        <menu:category id="c_seleniumtests" z="PPLMd2yNB6/LSbjIWogAacRPU+Q=">
+            <menu:item id="si_seleniumtests_test" messageCode="selenium_menu_test_suite" url="/resources/selenium/test-suite.xhtml" z="wwunW/IPDcunN97u41MvMJZQ2to="/>
+        </menu:category>
+        <menu:category id="c_bookcategory" z="pTKkGyZfiKSr2BvSS01YLaYgXRQ=">
+            <menu:item id="i_bookcategory_new" messageCode="global_menu_new" url="/bookcategorys?form" z="ZFiepWo3EZqZJAZjAxMowRFN0kA="/>
+            <menu:item id="i_bookcategory_list" messageCode="global_menu_list" url="/bookcategorys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ZMUHauehqCJao3TytP3ZlUYAc5Y="/>
         </menu:category>
     </menu:menu>
 </div>

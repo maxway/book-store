@@ -8,6 +8,7 @@
             <table:column id="c_com_max_bookstore_model_BorrowCard_borrower" property="borrower" z="mA4iuIKz03dmFHDTDf9Dc680XLg="/>
             <table:column date="true" dateTimePattern="${borrowCard_borrowdate_date_format}" id="c_com_max_bookstore_model_BorrowCard_borrowDate" property="borrowDate" z="YftCACnZM1rCgTOeeWrFK78frI4="/>
             <table:column date="true" dateTimePattern="${borrowCard_returndate_date_format}" id="c_com_max_bookstore_model_BorrowCard_returnDate" property="returnDate" z="H2CdE2fPyv0Y8L40XS2luA6twgI="/>
+            <table:column id="c_com_max_bookstore_model_BorrowCard_isReturn" property="isReturn" z="Ag+zU3OQ04fC5hLHOAU4TGtZgS4="/>
         </table:table>
     </page:list>
 </div>

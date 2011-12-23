@@ -13,6 +13,7 @@ privileged aspect BorrowCard_Roo_ToString {
         sb.append("BorrowDate: ").append(getBorrowDate()).append(", ");
         sb.append("Borrower: ").append(getBorrower()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
+        sb.append("IsReturn: ").append(getIsReturn()).append(", ");
         sb.append("ReturnDate: ").append(getReturnDate()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
