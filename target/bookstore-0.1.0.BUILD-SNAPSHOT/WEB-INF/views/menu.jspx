@@ -6,10 +6,12 @@
         <menu:category id="c_people" z="KpTxRZMmZNld1+CWCXFaQwFrCxQ=">
             <menu:item id="i_people_new" messageCode="global_menu_new" url="/peoples?form" z="uaYMfS6C1qzvTCVL5bAm0lcIXGI="/>
             <menu:item id="i_people_list" messageCode="global_menu_list" url="/peoples?page=1&amp;size=${empty param.size ? 10 : param.size}" z="RBoMbumb17XqKSG1l6vcqaDHguo="/>
+            <menu:item id="fi_people_email" messageCode="global_menu_find" url="/peoples?find=ByEmail&amp;form" z="tsErJ+BWHoTIF+mSq52hpLboilw="/>
         </menu:category>
         <menu:category id="c_book" z="WxiVAJUlwzLkYi6u7YpEjYOT82A=">
             <menu:item id="i_book_new" messageCode="global_menu_new" url="/books?form" z="gAIxvrBOHQC/N0HWTGD46jzwyk8="/>
             <menu:item id="i_book_list" messageCode="global_menu_list" url="/books?page=1&amp;size=${empty param.size ? 10 : param.size}" z="VM0+BikyiEq8a8S+W6bSp3FXQFo="/>
+            <menu:item id="fi_book_isbn" messageCode="global_menu_find" url="/books?find=ByISBN&amp;form" z="2U4gRfLiqbsVK7Ie5AQ1XDZv9b4="/>
         </menu:category>
         <menu:category id="c_borrowcard" z="xM/vF6LfocJ37+ZhLNU44evXbqk=">
             <menu:item id="i_borrowcard_new" messageCode="global_menu_new" url="/borrowcards?form" z="1mtpsjM+XjAqTrsOIBzN5oRPn/U="/>
@@ -18,6 +20,7 @@
         <menu:category id="c_bookclass" z="+MCJBUZcdTjVCB22y7MgQuI2uHU=">
             <menu:item id="i_bookclass_new" messageCode="global_menu_new" url="/bookclasses?form" z="b6ujpic8KtWlSUq2iH2xalbud60="/>
             <menu:item id="i_bookclass_list" messageCode="global_menu_list" url="/bookclasses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="gKMbEi+Bc5CoEiba9EgxUP1i9ls="/>
+            <menu:item id="fi_bookclass_isbn" messageCode="global_menu_find" url="/bookclasses?find=ByISBN&amp;form" z="nW7V0CmgHdjyEltQQ8L88h00gHE="/>
         </menu:category>
         <menu:category id="c_seleniumtests" z="PPLMd2yNB6/LSbjIWogAacRPU+Q=">
             <menu:item id="si_seleniumtests_test" messageCode="selenium_menu_test_suite" url="/resources/selenium/test-suite.xhtml" z="wwunW/IPDcunN97u41MvMJZQ2to="/>

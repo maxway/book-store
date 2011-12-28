@@ -13,4 +13,7 @@
 <definition extends="default" name="peoples/update">
         <put-attribute name="body" value="/WEB-INF/views/peoples/update.jspx"/>
     </definition>
+<definition extends="default" name="peoples/findPeoplesByEmail">
+        <put-attribute name="body" value="/WEB-INF/views/peoples/findPeoplesByEmail.jspx"/>
+    </definition>
 </tiles-definitions>

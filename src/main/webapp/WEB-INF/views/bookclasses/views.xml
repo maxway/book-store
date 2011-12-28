@@ -13,4 +13,7 @@
 <definition extends="default" name="bookclasses/update">
         <put-attribute name="body" value="/WEB-INF/views/bookclasses/update.jspx"/>
     </definition>
+<definition extends="default" name="bookclasses/findBookClassesByISBN">
+        <put-attribute name="body" value="/WEB-INF/views/bookclasses/findBookClassesByISBN.jspx"/>
+    </definition>
 </tiles-definitions>

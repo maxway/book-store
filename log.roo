@@ -141,3 +141,61 @@ perform tests
 perform package 
 field boolean --fieldName isReturn --class ~.model.BorrowCard
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-23 04:44:18
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-24 03:00:35
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.web
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-24 03:11:14
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-24 03:11:51
+// [failed] osgi obr start --bundleSymbolicName org.springframework.roo.addon.oscommands
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-24 03:48:18
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-24 03:48:28
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-24 03:49:08
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-24 03:49:29
+download status
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-24 03:56:59
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-24 04:12:23
+help
+version 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-24 04:19:10
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-24 04:19:26
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-24 04:29:35
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-24 04:30:16
+hint
+help
+field string --class ~.model.Book --fieldName testName --nullRequired
+hint
+perform tests
+// [failed] field string --class ~.model.Book --fieldName testName 
+field string --class ~.model.Book --fieldName testName 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-24 05:01:56
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-26 04:11:24
+// [failed] hint
+hint
+hint tests
+perform tests
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-26 04:48:48
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-27 15:56:50
+security setup
+finder add --class ~.model.Book --finderName findBookClasses
+finder add --class ~.model.Book --finderName findBookClasses
+finder add --class ~.model.Book --finderName findBookClassesByISBN
+finder add --finderName findBookClassesByISBN --class ~.model.Book 
+finder list 
+finder list 
+finder add --finderName findBookClassesByISBN --class ~.model.Book 
+finder add --finderName findBookClassesByISBN --class ~.model.BookClass
+finder list 
+finder add --class ~.model.Book --finderName findBooksByISBN
+finder add --class ~.model.People --finderName findPeoplesByEmail
+perform tests
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-28 04:56:42
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-28 18:36:18
+hint
+persistence setup --database HYPERSONIC_IN_MEMORY --provider OPENJPA
+persistence setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE 
+perform package

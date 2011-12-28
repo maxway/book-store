@@ -8,7 +8,7 @@ import javax.persistence.Column;
 
 @RooJavaBean
 @RooToString
-@RooEntity
+@RooEntity(finders = { "findPeoplesByEmail" })
 public class People {
 
     @NotNull

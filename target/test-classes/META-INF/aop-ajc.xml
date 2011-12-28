@@ -1,21 +1,21 @@
 <aspectj>
 <aspects>
-<aspect name="com.max.bookstore.model.PeopleDataOnDemand_Roo_Configurable"/>
 <aspect name="com.max.bookstore.model.BookClassIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.max.bookstore.model.PeopleDataOnDemand_Roo_Configurable"/>
+<aspect name="com.max.bookstore.model.BookDataOnDemand_Roo_Configurable"/>
+<aspect name="com.max.bookstore.model.PeopleDataOnDemand_Roo_DataOnDemand"/>
 <aspect name="com.max.bookstore.model.BookIntegrationTest_Roo_Configurable"/>
+<aspect name="com.max.bookstore.model.BorrowCardDataOnDemand_Roo_DataOnDemand"/>
 <aspect name="com.max.bookstore.model.BookIntegrationTest_Roo_IntegrationTest"/>
 <aspect name="com.max.bookstore.model.BookClassIntegrationTest_Roo_Configurable"/>
 <aspect name="com.max.bookstore.model.BookDataOnDemand_Roo_DataOnDemand"/>
 <aspect name="com.max.bookstore.model.BorrowCardDataOnDemand_Roo_Configurable"/>
-<aspect name="com.max.bookstore.model.BookClassDataOnDemand_Roo_DataOnDemand"/>
-<aspect name="com.max.bookstore.model.BookDataOnDemand_Roo_Configurable"/>
-<aspect name="com.max.bookstore.model.PeopleDataOnDemand_Roo_DataOnDemand"/>
-<aspect name="com.max.bookstore.model.BorrowCardDataOnDemand_Roo_DataOnDemand"/>
 <aspect name="com.max.bookstore.model.PeopleIntegrationTest_Roo_IntegrationTest"/>
 <aspect name="com.max.bookstore.model.BorrowCardIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.max.bookstore.model.BookClassDataOnDemand_Roo_DataOnDemand"/>
 <aspect name="com.max.bookstore.model.BorrowCardIntegrationTest_Roo_Configurable"/>
-<aspect name="com.max.bookstore.model.PeopleIntegrationTest_Roo_Configurable"/>
 <aspect name="com.max.bookstore.model.BookClassDataOnDemand_Roo_Configurable"/>
+<aspect name="com.max.bookstore.model.PeopleIntegrationTest_Roo_Configurable"/>
 </aspects>
 </aspectj>
 
