@@ -199,3 +199,47 @@ hint
 persistence setup --database HYPERSONIC_IN_MEMORY --provider OPENJPA
 persistence setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE 
 perform package
+hint
+help security
+help
+finder list --class ~.model.People
+perform package
+perform package
+perform package
+perform package
+field email template --class ~.model.People --fieldName emailT
+finder add --finderName findPeoplesByEmailAdnNameEquals --class ~.model.People
+finder add --finderName findPeoplesByEmailAdnName --class ~.model.People
+finder list
+finder add --finderName findPeoplesByEmailEqualsAnnNameEquals --class ~.model.People
+finder add --finderName findPeoplesByEmailAndNameEquals --class ~.model.People
+perform package
+// [failed] logging setup --level INFO 
+logging setup --level DEBUG
+logging setup --level DEBUG --package ALL_SPRING 
+logging setup --level DEBUG --package PROJECT 
+logging setup --level DEBUG --package ALL_SPRING 
+logging setup --level DEBUG --package SECURITY 
+logging setup --level INFO --package PROJECT 
+logging setup --level INFO 
+logging setup --level INFO --package ALL_SPRING 
+logging setup --level DEBUG --package PROJECT 
+// [failed] database introspect --schema unable-to-obtain-connection 
+web mvc embed video --provider GOOGLE_VIDEO --videoId 16069687
+perform tests
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-29 03:45:42
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-29 23:54:14
+field email template --class ~.web.PeopleController
+email sender setup --hostServer smtp.gmail.com --username maxway --password kickgui --port 587 --protocol SMTP --encoding UTF8
+perform package 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-30 00:32:01
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-30 10:09:39
+perform tests
+perform tests
+logging setup --level WARN --package ALL_SPRING 
+osgi find --bundleSymbolicName org.apache.felix.bundlerepository
+osgi find --bundleSymbolicName org.springframework.roo.addon
+osgi ps
+addon search 
+download status
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-30 10:51:29

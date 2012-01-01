@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByEmailAndNameEquals" id="ff_com_max_bookstore_model_People" path="/peoples" z="+dSibWnZRGOdwopk9C6CN+WohnM=">
+        <field:input disableFormBinding="true" field="email" id="f_com_max_bookstore_model_People_email" required="true" validationMessageCode="field_invalid_email" z="sm9G9RM2TiPQMd5/RYMDbjKOums="/>
+        <field:input disableFormBinding="true" field="name" id="f_com_max_bookstore_model_People_name" required="true" z="lrL7r6ghnZw65qq4kZ554wP08Vo="/>
+    </form:find>
+</div>

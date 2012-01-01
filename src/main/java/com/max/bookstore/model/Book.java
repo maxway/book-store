@@ -9,7 +9,6 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @RooJavaBean
 @RooToString
-@PrimaryKeyJoinColumn(name="BOOKCLASS")
 @RooEntity(finders = { "findBooksByISBN" })
 public class Book extends BookClass {
 

@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 privileged aspect PeopleController_Roo_Controller_Finder {
     
-    @RequestMapping(params = { "find=ByEmail", "form" }, method = RequestMethod.GET)
-    public String PeopleController.findPeoplesByEmailForm(Model uiModel) {
-        return "peoples/findPeoplesByEmail";
+    @RequestMapping(params = { "find=ByEmailAndNameEquals", "form" }, method = RequestMethod.GET)
+    public String PeopleController.findPeoplesByEmailAndNameEqualsForm(Model uiModel) {
+        return "peoples/findPeoplesByEmailAndNameEquals";
     }
     
-    @RequestMapping(params = "find=ByEmail", method = RequestMethod.GET)
-    public String PeopleController.findPeoplesByEmail(@RequestParam("email") String email, Model uiModel) {
-        uiModel.addAttribute("peoples", People.findPeoplesByEmail(email).getResultList());
+    @RequestMapping(params = "find=ByEmailAndNameEquals", method = RequestMethod.GET)
+    public String PeopleController.findPeoplesByEmailAndNameEquals(@RequestParam("email") String email, @RequestParam("name") String name, Model uiModel) {
+        uiModel.addAttribute("peoples", People.findPeoplesByEmailAndNameEquals(email, name).getResultList());
         return "peoples/list";
     }
     

@@ -16,4 +16,7 @@
 <definition extends="default" name="peoples/findPeoplesByEmail">
         <put-attribute name="body" value="/WEB-INF/views/peoples/findPeoplesByEmail.jspx"/>
     </definition>
+<definition extends="default" name="peoples/findPeoplesByEmailAndNameEquals">
+        <put-attribute name="body" value="/WEB-INF/views/peoples/findPeoplesByEmailAndNameEquals.jspx"/>
+    </definition>
 </tiles-definitions>

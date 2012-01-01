@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_max_bookstore_model_People" modelAttribute="people" path="/peoples" render="${empty dependencies}" z="bReKxpZVOPA3tevO2WfmoH1yRxI=">
         <field:input field="email" id="c_com_max_bookstore_model_People_email" required="true" validationMessageCode="field_invalid_email" z="n/SvLOu9V6c9jRT5CRgpyF+kcRM="/>
-        <field:input field="name" id="c_com_max_bookstore_model_People_name" z="KknFbx6mgr0e1YIWAqiGI8SXwJE="/>
+        <field:input field="name" id="c_com_max_bookstore_model_People_name" required="true" z="+eqUDONtnYW2zw5hWTyW40yz0Sc="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_max_bookstore_model_People" render="${not empty dependencies}" z="T9Yhpq2XLJWeLkq5wY1reBTx07o="/>
 </div>

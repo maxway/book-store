@@ -10,11 +10,13 @@ import javax.persistence.TypedQuery;
 
 privileged aspect People_Roo_Finder {
     
-    public static TypedQuery<People> People.findPeoplesByEmail(String email) {
+    public static TypedQuery<People> People.findPeoplesByEmailAndNameEquals(String email, String name) {
         if (email == null || email.length() == 0) throw new IllegalArgumentException("The email argument is required");
+        if (name == null || name.length() == 0) throw new IllegalArgumentException("The name argument is required");
         EntityManager em = People.entityManager();
-        TypedQuery<People> q = em.createQuery("SELECT o FROM People AS o WHERE o.email = :email", People.class);
+        TypedQuery<People> q = em.createQuery("SELECT o FROM People AS o WHERE o.email = :email AND o.name = :name", People.class);
         q.setParameter("email", email);
+        q.setParameter("name", name);
         return q;
     }
     

@@ -6,7 +6,7 @@
         <menu:category id="c_people" z="KpTxRZMmZNld1+CWCXFaQwFrCxQ=">
             <menu:item id="i_people_new" messageCode="global_menu_new" url="/peoples?form" z="uaYMfS6C1qzvTCVL5bAm0lcIXGI="/>
             <menu:item id="i_people_list" messageCode="global_menu_list" url="/peoples?page=1&amp;size=${empty param.size ? 10 : param.size}" z="RBoMbumb17XqKSG1l6vcqaDHguo="/>
-            <menu:item id="fi_people_email" messageCode="global_menu_find" url="/peoples?find=ByEmail&amp;form" z="tsErJ+BWHoTIF+mSq52hpLboilw="/>
+            <menu:item id="fi_people_emailandnameequals" messageCode="global_menu_find" url="/peoples?find=ByEmailAndNameEquals&amp;form" z="LBBliuOFBSJKgnFMfpgBhhvFmVc="/>
         </menu:category>
         <menu:category id="c_book" z="WxiVAJUlwzLkYi6u7YpEjYOT82A=">
             <menu:item id="i_book_new" messageCode="global_menu_new" url="/books?form" z="gAIxvrBOHQC/N0HWTGD46jzwyk8="/>
@@ -29,5 +29,5 @@
             <menu:item id="i_bookcategory_new" messageCode="global_menu_new" url="/bookcategorys?form" z="ZFiepWo3EZqZJAZjAxMowRFN0kA="/>
             <menu:item id="i_bookcategory_list" messageCode="global_menu_list" url="/bookcategorys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ZMUHauehqCJao3TytP3ZlUYAc5Y="/>
         </menu:category>
-    </menu:menu>
+      </menu:menu>
 </div>
